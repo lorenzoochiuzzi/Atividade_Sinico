@@ -1,136 +1,143 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Minha Netflix</title>
-    <style>
-      /* Estilos CSS para a página */
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #141414;
-        color: #fff;
-      }
-      
-      #header {
-        background-color: #E50914;
-        height: 80px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 30px;
-      }
-      
-      #header h1 {
-        margin: 0;
-        font-size: 30px;
-        font-weight: bold;
-        color: #fff;
-      }
-      
-      #nav {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-      }
-      
-      #nav a {
-        color: #fff;
-        margin-left: 20px;
-        text-decoration: none;
-        font-weight: bold;
-      }
-      
-      #hero {
-        background-image: url('https://i.imgur.com/cx5sq5K.jpg');
-        background-size: cover;
-        height: 500px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-      }
-      
-      #hero h2 {
-        font-size: 50px;
-        margin: 0;
-        font-weight: bold;
-        color: #fff;
-        text-shadow: 2px 2px #000;
-      }
-      
-      #hero p {
-        font-size: 20px;
-        margin: 0;
-        margin-top: 20px;
-        color: #fff;
-        text-shadow: 2px 2px #000;
-      }
-      
-      #categories {
-        background-color: #000;
-        padding: 50px;
-      }
-      
-      #categories h3 {
-        font-size: 30px;
-        margin: 0;
-        margin-bottom: 20px;
-        color: #fff;
-      }
-      
-      .category {
-        display: flex;
-        overflow-x: auto;
-        scrollbar-width: none;
-        padding-bottom: 20px;
-      }
-      
-      .category::-webkit-scrollbar {
-        display: none;
-      }
-      
-      .category img {
-        height: 200px;
-        margin-right: 20px;
-        object-fit: cover;
-      }
-      
-      .category a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 20px;
-      }
-      
-      .category a:hover {
-        text-decoration: underline;
-      }
-      
-      #footer {
-        background-color: #000;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 20px;
-      }
-      
-      #footer p {
-        margin: 0;
-        color: #fff;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="header">
-      <h1>Minha Netflix</h1>
-      <nav id="nav">
-        <a href="#">Início</a>
-        <a href="#">Séries</a>
-        <a href="#">Filmes</a>
-        <a href="#">Documentários</a>
-      </nav>
-    </div>
-    <div id="hero">
-      <h2>Assista a filmes e séries online</h2>
-      <p>Com milhares de títulos para
+
+<head>
+  <title>Minha Netflix</title>
+  <style>
+    /* Estilos CSS para a página */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #141414;
+      color: #fff;
+    }
+
+    #header {
+      background-color: #E50914;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+    }
+
+    #header h1 {
+      margin: 0;
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    #nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    #nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #hero {
+      background-image: url('https://i.imgur.com/cx5sq5K.jpg');
+      background-size: cover;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    #hero h2 {
+      font-size: 50px;
+      margin: 0;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px #000;
+    }
+
+    #hero p {
+      font-size: 20px;
+      margin: 0;
+      margin-top: 20px;
+      color: #fff;
+      text-shadow: 2px 2px #000;
+    }
+
+    #categories {
+      background-color: #000;
+      padding: 50px;
+    }
+
+    #categories h3 {
+      font-size: 30px;
+      margin: 0;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .category {
+      display: flex;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding-bottom: 20px;
+    }
+
+    .category::-webkit-scrollbar {
+      display: none;
+    }
+
+    .category img {
+      height: 200px;
+      margin-right: 20px;
+      object-fit: cover;
+    }
+
+    .category a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .category a:hover {
+      text-decoration: underline;
+    }
+
+    #footer {
+      background-color: #000;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+    }
+
+    #footer p {
+      margin: 0;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    <h1>Minha Netflix</h1>
+    <nav id="nav">
+      <a href="#">Início</a>
+      <a href="#">Séries</a>
+      <a href="#">Filmes</a>
+      <a href="#">Documentários</a>
+    </nav>
+  </div>
+  <div id="hero">
+    <h2>Assista a filmes e séries online</h2>
+    <p>Com milhares de títulos para </p>
+
+    <p>aaaabdsjfhgfevbhujahyvsdbh  VIRUS HAHAHAHAH</p>
+</body>
+
+</html>
